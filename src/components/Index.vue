@@ -1,27 +1,6 @@
 <template>
   <div class="body-1">
-    <div class="header">
-    <div class="h-1">
-      <a href="/"><img src="../assets/imges/logo.png"></a>
-    </div>
-    <div class="h-2">
-      <h1>虹扬专业精神  焕发创意力量</h1>
-    </div>
-    <div class="h-3">
-      <ul>
-        <li><a href="">首页</a></li>
-        <li><a href="">虹焕优势</a></li>
-        <li><a href="">虹焕案例</a></li>
-        <li><a href="">关于虹焕</a></li>
-        <li><a href="">虹焕动态</a></li>
-        <li><a href="">联系虹焕</a></li>
-      </ul>
-    </div>
-    <div class="h-4">
-      <a href="/"><div class="h-4-b-1"><img src="../assets/imges/erweima.jpg"></div></a>
-      <a href="/"><div class="h-4-b-2"><img src="../assets/imges/button1.png"></div></a>
-    </div>
-    </div>
+    <Header></Header>
     <div class="banner">
       <ul>
         <li>
@@ -154,6 +133,17 @@
   </div>
 
 </template>
+<script>
+  import Header from "./Header";
+  export default {
+      name:"index",
+      components: {Header},
+      data(){
+
+      },
+      comments:{Header}
+  }
+</script>
 <style>
 
   body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
@@ -182,7 +172,7 @@
   .h-3{/*background: blue;*/width:1014px; height:100%;float: left;}
   .h-3 ul{font-size: 20px;color: #2b2b2b;width: 100%;}
   .h-3 ul li{width: 151px;/*background: burlywood;*/float: left;text-align: center;line-height: 82px;}
-  .h-3 ul li a{ text-decoration:none;}
+  .h-3 ul li a{ text-decoration:none;color: #2b2b2b}
 
   .h-3 ul li a:hover{color: red; font-weight: bold;}
   .h-4{/*background: yellow;*/width:212px; height:100%;float: left;}
@@ -287,23 +277,23 @@
   .footer .content9 .left-si{width: 730px;height: 238px;/*background: chartreuse;*/float: right;padding-left: 20px;}
  .left-si{font-size: 20px; color: white;line-height: 39px;}
 </style>
-<script>
+<!--<script>-->
 
-export default {
-  name: 'Index',
-  data () {
-    return {
-      username : '123456',
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
-  methods:{
-    check(){
-      alert(0)
-    }
-  }
-}
-</script>
+<!--export default {-->
+<!--  name: 'Index',-->
+<!--  data () {-->
+<!--    return {-->
+<!--      username : '123456',-->
+<!--      msg: 'Welcome to Your Vue.js App'-->
+<!--    }-->
+<!--  },-->
+<!--  methods:{-->
+<!--    check(){-->
+<!--      alert(0)-->
+<!--    }-->
+<!--  }-->
+<!--}-->
+<!--</script>-->
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
